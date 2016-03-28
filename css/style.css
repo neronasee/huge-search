@@ -1,5 +1,7 @@
 body{
-
+	background: #F1F1F1;
+	font: 12px/1.5 Arial, sans-serif;
+	color: #c2c2c2;
 }
 
 /* Typography */
@@ -49,9 +51,101 @@ select:focus {
 textarea {
 
 }
+.ba-hugesearch-form ::-webkit-input-placeholder {color:#c2c2c2;}
+.ba-hugesearch-form ::-moz-placeholder          {color:#c2c2c2;}
+.ba-hugesearch-form :-moz-placeholder           {color:#c2c2c2;}
+.ba-hugesearch-form :-ms-input-placeholder      {color:#c2c2c2;}
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
+	max-width: 1055px;
+	margin: 0 auto;
+}
+
+/* main */
+.ba-hugesearch-form {
+	position: relative;
+	padding: 0 86px 0 6px;
+	margin: 60px 0px;
+}
+.ba-hugesearch-form ::-webkit-input-placeholder {color:#c2c2c2;}
+.ba-hugesearch-form ::-moz-placeholder          {color:#c2c2c2;}
+.ba-hugesearch-form :-moz-placeholder           {color:#c2c2c2;}
+.ba-hugesearch-form :-ms-input-placeholder      {color:#c2c2c2;}
+
+.ba-hugesearch-input,
+.ba-hugesearch-submit {
+	border: none;
+	outline: none;
+}
+.ba-hugesearch-input {
+	font-size: 100px;
+	background: transparent;
+	width:100%;
+	font-weight: 700;
+	color: #ec5a62;
+}
+
+.ba-hugesearch-submit {
+	background: url(../img/magnifier.svg);
+	font-size: 0;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -40px;
+}
+.ba-hugesearch-content {
+	font-size: 0;
+}
+.ba-column {
+	vertical-align: top;
+	font-size: 12px;
+	width: 30%;
+	display: inline-block;
+}
+.ba-column:nth-child(2) {
+	margin: 0 5%;
+}
+.ba-column-title {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.ba-column-list {
+	padding: 0;
+	list-style: none;
+}
+.ba-column-list li ~ li {
+	margin-top: 4px;
+}
+.ba-column-list a {
+	display: block;
+	background-color:  rgba(118,117,128,0.05);
+	border-radius: 5px;
+	padding: 12px;
+	color: #c2c2c2;
+	text-decoration: none;
+	font-size: 0;
+}
+.ba-column-list a:hover {
+	color: #ec5a62;
+	background: rgba(118,117,128,0.1);
+}
+.ba-column-list img,
+.ba-column-list h3 {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ba-column-list img {
+	margin-right: 15px;
+	width: 50px;
+	height: 50px;
+}
+.ba-column-list h3 {
+	width: calc(100% - 65px);
+	margin: 0;
+	font-size: 14px;
 }
